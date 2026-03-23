@@ -43,8 +43,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector("#add-classes").addEventListener('click', () => {
         document.querySelector('.selector-examples li:first-child').classList.add('first');
+
         document.querySelectorAll('.selector-examples li:nth-child(odd)').forEach(el => el.classList.add('odd'));
-        // TODO: Add remaining selectors using nth-child, loops and conditional logic where approriate. (https://www.w3schools.com/CSSref/sel_nth-child.php) 
+
+ // TODO: Add remaining selectors using nth-child, loops and conditional logic where approriate. (https://www.w3schools.com/CSSref/sel_nth-child.php) 
+
+        document.querySelector('.selector-examples li:nth-child(4)').classList.add('highlighter');
+
+        document.querySelector('.selector-examples li:last-child').classList.add('last');
+
+       
     });
 
     /* PART 3: REPLACEMENT TEXT
