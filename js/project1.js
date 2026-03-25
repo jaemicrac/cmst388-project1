@@ -14,6 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // TODO: Check if isStudent is true or false and set text output to a new variable called studentStatus
         // - If isStudent is true, set studentStatus to "I am currently a student."
         // - If isStudent is false, set studentStatus to "I am not a student."
+        let studentStatus; 
+
+        if (isStudent === true) {
+            studentStatus = "I am currently a student.";
+        } else {
+            studentStatus = "I am not a student.";
+        }
         
         // TODO: Using string concatenation, store a message to a new variable called message. 
         // - The message variable should should include your name, age, and a statement about whether you are a student or not. 
