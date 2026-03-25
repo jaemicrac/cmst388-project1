@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // - If isStudent is true, set studentStatus to "I am currently a student."
         // - If isStudent is false, set studentStatus to "I am not a student."
         let studentStatus; 
-
         if (isStudent === true) {
             studentStatus = "I am currently a student.";
         } else {
@@ -33,8 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const messageElement = document.createElement('div');
         messageElement.textContent = message;
         messageDisplayArea.appendChild(messageElement);
-    
-    
+    };
     // Call the introduction function. Do not edit this line.
     introduction(name, age, isStudent);
 
